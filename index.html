@@ -5,63 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio QA Automation – Marcel</title>
+    <meta name="description"
+        content="Portfolio de QA Automation de Marcel. Especialista en Cypress, Selenium, Postman y CI/CD.">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Marcel – QA Automation & Testing</h1>
-        <p>Especialista en Automatización de APIs y UI (Cypress, Selenium) • Pruebas de Contrato • CI/CD Básico
-        </p>
+        <div class="container">
+            <h1>Marcel <span class="accent">–</span> QA Automation</h1>
+            <p class="subtitle">Especialista en Automatización de APIs y UI (Cypress, Selenium) • Pruebas de Contrato •
+                CI/CD Básico</p>
+        </div>
     </header>
 
     <section class="about">
-        <h2>Sobre mí</h2>
-        <p>Ingeniero de Calidad (QA) con experiencia en el desarrollo de *suites* de automatización. Mi enfoque
-            es asegurar la calidad del software mediante el diseño de **pruebas de regresión sólidas**, la **validación
-            de flujos de negocio End-to-End (E2E)** y el **mantenimiento de la integridad del contrato API**.</p>
-        <p>Utilizo herramientas líderes en la industria como **Cypress, Selenium, Postman, Pytest, Jira** y
-            **TestRail**.</p>
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <p>Ingeniero de QA Automation con sólida base Fullstack. Especializado en diseño y ejecución de estrategias
+                de testing End-to-End (E2E) con <strong>Cypress</strong> y <strong>Selenium</strong>, y automatización
+                de APIs con <strong>Postman</strong>.
+                Combino prevención de errores (Shift-Left) con validación de flujos críticos de negocio.</p>
+            <p class="tech-stack">Stack: <span>Cypress</span> <span>Selenium</span> <span>Postman</span>
+                <span>Pytest</span> <span>Jira</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="link portfolio">
+        <div class="container">
+            <p> Portfolio Developer : <a href="https://marwix127.github.io" target="_blank">marwix127.github.io</a></p>
+
+        </div>
     </section>
 
     <section class="projects">
-        <h2>Proyectos de Automatización de QA</h2>
+        <div class="container">
+            <h2>Proyectos de Automatización de QA</h2>
 
-        <div class="card">
-            <h3>🥇 Proyecto 1: Automatización E2E del Ciclo de Compra con Cypress (React Front-end)</h3>
-            <h4>Habilidades Clave: Cypress, JavaScript, Flujos E2E, Fixtures</h4>
-            <p>Implementación de un **Framework de Testing de Regresión** con Cypress para una aplicación
-                React. El flujo se centra en el **ciclo crítico de compra (Login, Adición al Carrito, Checkout)**,
-                asegurando la consistencia de datos y la experiencia de usuario.</p>
-            <a href="https://github.com/marwix127/e-shop-qa-automation">Ver Repositorio</a>
-        </div>
+            <div class="projects-grid">
+                <div class="card">
+                    <h3>Proyecto 1: Automatización E2E del Ciclo de Compra con Cypress (React Front-end)</h3>
+                    <h4>Habilidades Clave: Cypress, JavaScript, Flujos E2E, Fixtures</h4>
+                    <p>Implementación de un <strong>Framework de Testing de Regresión</strong> con Cypress para una
+                        aplicación
+                        React. El flujo se centra en el <strong>ciclo crítico de compra (Login, Adición al Carrito,
+                            Checkout)</strong>, asegurando la consistencia de datos y la experiencia de usuario.</p>
+                    <a href="https://github.com/marwix127/e-shop-qa-automation" class="repo-link">Ver Repositorio</a>
+                </div>
 
-        <div class="card">
-            <h3>🥈 Proyecto 2: Automatización de API RESTful – Pruebas de Contrato y Flujos Críticos</h3>
-            <h4>Habilidades Clave: Postman Runner, Testing de Contrato, Token Management, Flujos Encadenados
-            </h4>
-            <p>Diseño de una suite de pruebas para una API (simulando Spotify). El proyecto demuestra el
-                **encadenamiento de peticiones (CRUD)**, la **validación de tokens de autorización (Bearer)** y el
-                **testing negativo** para asegurar el manejo de errores (400, 404, 409). </p>
-            <a href="https://github.com/marwix127/Spotify-API-QA-Collection">Ver Repositorio</a>
-        </div>
+                <div class="card">
+                    <h3>Proyecto 2: Automatización de API RESTful - Pruebas de Contrato y Flujos Críticos</h3>
+                    <h4>Habilidades Clave: Postman Runner, Testing de Contrato, Token Management, Flujos Encadenados
+                    </h4>
+                    <p>Diseño de una suite de pruebas para una API (simulando Spotify). El proyecto demuestra el
+                        <strong>encadenamiento de peticiones (CRUD)</strong>, la <strong>validación de tokens de
+                            autorización
+                            (Bearer)</strong> y el <strong>testing negativo</strong> para asegurar el manejo de errores
+                        (400, 404, 409).
+                    </p>
+                    <a href="https://github.com/marwix127/Spotify-API-QA-Collection" class="repo-link">Ver
+                        Repositorio</a>
+                </div>
 
-        <div class="card">
-            <h3>🥉 Proyecto 3: Framework E2E con Page Object Model (POM) – Selenium & Python/Pytest</h3>
-            <h4>Habilidades Clave: Selenium WebDriver, Python, Pytest, Page Object Model (POM)</h4>
-            <p>Construcción de una arquitectura de pruebas basada en el patrón **POM** para simular la
-                gestión de contenido en un panel de administración (Django/Vue). Se centra en la automatización del
-                **ciclo CRUD de inventario** para asegurar la calidad de los datos.</p>
-            <a href="https://github.com/marwix127/Spotify-API-QA-Collection">Ver Repositorio</a>
+                <div class="card">
+                    <h3>Proyecto 3: Framework E2E con Page Object Model (POM) - Selenium & Python/Pytest</h3>
+                    <h4>Habilidades Clave: Selenium WebDriver, Python, Pytest, Page Object Model (POM)</h4>
+                    <p>Construcción de una arquitectura de pruebas basada en el patrón <strong>POM</strong> para simular
+                        la
+                        gestión de contenido en un panel de administración (Django/Vue). Se centra en la automatización
+                        del
+                        <strong>ciclo CRUD de inventario</strong> y la <strong>validación de flujos críticos</strong>
+                        para asegurar la calidad de los flujos de negocio. Así como tambien la validacion de la creación
+                        de
+                        usuarios y la autenticación.
+                    </p>
+                    <a href="https://github.com/marwix127/Selenium-QA-Marketplace" class="repo-link">Ver Repositorio</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Contacto</h2>
-        <p>Email: <strong>marwix12@gmail.com</strong></p>
-        <p>GitHub: <a href="https://github.com/marwix127" target="_blank">marwix127</a></p>
-    </section>
+    <footer class="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+
+            <p>Email: <a href="mailto:marwix12@gmail.com">marwix12@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/marwix127" target="_blank">github.com/marwix127</a></p>
+        </div>
+    </footer>
 
     <footer>
         <p>© 2025 Marcel - QA Portfolio</p>
