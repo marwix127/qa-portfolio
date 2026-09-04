@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio QA Automation – Marcel</title>
     <meta name="description"
-        content="Portfolio de QA Automation de Marcel. Especialista en Cypress, Selenium, Postman y CI/CD.">
+        content="Portfolio de QA Automation de Marcel. Especialista en Playwright, Cypress, Selenium, Postman y CI/CD.">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <header>
         <div class="container">
             <h1>Marcel <span class="accent">–</span> QA Automation</h1>
-            <p class="subtitle">Especialista en Automatización de APIs y UI (Cypress, Selenium) • Pruebas de Contrato •
+            <p class="subtitle">Especialista en Automatización de APIs y UI (Playwright, Cypress, Selenium) • Pruebas de Contrato •
                 CI/CD Básico</p>
         </div>
     </header>
@@ -27,10 +27,10 @@
         <div class="container">
             <h2>Sobre mí</h2>
             <p>Ingeniero de QA Automation con sólida base Fullstack. Especializado en diseño y ejecución de estrategias
-                de testing End-to-End (E2E) con <strong>Cypress</strong> y <strong>Selenium</strong>, y automatización
+                de testing End-to-End (E2E) con <strong>Playwright</strong>, <strong>Cypress</strong> y <strong>Selenium</strong>, y automatización
                 de APIs con <strong>Postman</strong>.
                 Combino prevención de errores (Shift-Left) con validación de flujos críticos de negocio.</p>
-            <p class="tech-stack">Stack: <span>Cypress</span> <span>Selenium</span> <span>Postman</span>
+            <p class="tech-stack">Stack: <span>Playwright</span> <span>TypeScript</span> <span>Cypress</span> <span>Selenium</span> <span>Postman</span>
                 <span>Pytest</span> <span>Jira</span>
             </p>
         </div>
@@ -49,7 +49,23 @@
 
             <div class="projects-grid">
                 <div class="card">
-                    <h3>Proyecto 1: Automatización E2E del Ciclo de Compra con Cypress (React Front-end)</h3>
+                    <h3>Proyecto 1: ContractLens - Suite E2E + API con Playwright y TypeScript</h3>
+                    <h4>Habilidades Clave: Playwright, TypeScript, Page Object Model, Network Mocking, Cross-Browser,
+                        GitHub Actions</h4>
+                    <p>Automatización completa de <strong>ContractLens</strong>, una aplicación real de análisis de
+                        contratos con IA. La suite separa la capa <strong>UI</strong> (interceptando la API para
+                        obtener pruebas rápidas y deterministas, aislando la latencia del modelo de IA) de la capa
+                        <strong>API</strong>, que valida contra el backend real <strong>códigos HTTP, esquemas de
+                            respuesta y cabeceras</strong> (200, 400, 404, 415). Incluye escenarios negativos,
+                        ejecución <strong>cross-browser (Chromium, Firefox y WebKit)</strong>, trazas y vídeos de
+                        fallos, y un pipeline de <strong>CI en GitHub Actions</strong>. Cobertura actual: 30/30 pruebas
+                        (21 frontend + 9 backend).
+                    </p>
+                    <a href="https://github.com/marwix127/contractlens-playwright" class="repo-link">Ver Repositorio</a>
+                </div>
+
+                <div class="card">
+                    <h3>Proyecto 2: Automatización E2E del Ciclo de Compra con Cypress (React Front-end)</h3>
                     <h4>Habilidades Clave: Cypress, JavaScript, Flujos E2E, Fixtures</h4>
                     <p>Implementación de un <strong>Framework de Testing de Regresión</strong> con Cypress para una
                         aplicación
@@ -59,7 +75,7 @@
                 </div>
 
                 <div class="card">
-                    <h3>Proyecto 2: Automatización de API RESTful - Pruebas de Contrato y Flujos Críticos</h3>
+                    <h3>Proyecto 3: Automatización de API RESTful - Pruebas de Contrato y Flujos Críticos</h3>
                     <h4>Habilidades Clave: Postman Runner, Testing de Contrato, Token Management, Flujos Encadenados
                     </h4>
                     <p>Diseño de una suite de pruebas para una API (simulando Spotify). El proyecto demuestra el
@@ -73,7 +89,7 @@
                 </div>
 
                 <div class="card">
-                    <h3>Proyecto 3: Framework E2E con Page Object Model (POM) - Selenium & Python/Pytest</h3>
+                    <h3>Proyecto 4: Framework E2E con Page Object Model (POM) - Selenium & Python/Pytest</h3>
                     <h4>Habilidades Clave: Selenium WebDriver, Python, Pytest, Page Object Model (POM)</h4>
                     <p>Construcción de una arquitectura de pruebas basada en el patrón <strong>POM</strong> para simular
                         la
