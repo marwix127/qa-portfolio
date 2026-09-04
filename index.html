@@ -7,9 +7,20 @@
     <title>Portfolio QA Automation – Marcel</title>
     <meta name="description"
         content="Portfolio de QA Automation de Marcel. Especialista en Playwright, Cypress, Selenium, Postman y CI/CD.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:url" content="https://marwix127.github.io/qa-portfolio/">
+    <meta property="og:title" content="Marcel – QA Automation">
+    <meta property="og:description"
+        content="Automatización E2E y de APIs con Playwright, Cypress, Selenium y Postman. Pruebas de contrato y CI/CD.">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%233b82f6'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -18,102 +29,135 @@
     <header>
         <div class="container">
             <h1>Marcel <span class="accent">–</span> QA Automation</h1>
-            <p class="subtitle">Especialista en Automatización de APIs y UI (Playwright, Cypress, Selenium) • Pruebas de Contrato •
-                CI/CD Básico</p>
+            <p class="subtitle">Especialista en Automatización de APIs y UI (Playwright, Cypress, Selenium) • Pruebas de
+                Contrato • CI/CD Básico</p>
+
+            <div class="header-actions">
+                <a class="btn btn-primary" href="assets/CV%20Marcel%20QA.pdf" target="_blank" rel="noopener">CV
+                    (Español)</a>
+                <a class="btn" href="assets/CV%20Marcel%20QA%20ENG.pdf" target="_blank" rel="noopener">CV (English)</a>
+                <a class="btn" href="https://www.linkedin.com/in/marcelelmouhajirmoncunill/" target="_blank"
+                    rel="noopener">LinkedIn</a>
+            </div>
         </div>
     </header>
 
-    <section class="about">
-        <div class="container">
-            <h2>Sobre mí</h2>
-            <p>Ingeniero de QA Automation con sólida base Fullstack. Especializado en diseño y ejecución de estrategias
-                de testing End-to-End (E2E) con <strong>Playwright</strong>, <strong>Cypress</strong> y <strong>Selenium</strong>, y automatización
-                de APIs con <strong>Postman</strong>.
-                Combino prevención de errores (Shift-Left) con validación de flujos críticos de negocio.</p>
-            <p class="tech-stack">Stack: <span>Playwright</span> <span>TypeScript</span> <span>Cypress</span> <span>Selenium</span> <span>Postman</span>
-                <span>Pytest</span> <span>Jira</span>
-            </p>
-        </div>
-    </section>
+    <main>
 
-    <section class="link portfolio">
-        <div class="container">
-            <p> Portfolio Developer : <a href="https://marwix127.github.io" target="_blank">marwix127.github.io</a></p>
+        <section class="about">
+            <div class="container">
+                <h2>Sobre mí</h2>
+                <p>Ingeniero de QA Automation con sólida base Fullstack. Especializado en diseño y ejecución de
+                    estrategias de testing End-to-End (E2E) con <strong>Playwright</strong>, <strong>Cypress</strong> y
+                    <strong>Selenium</strong>, y automatización de APIs con <strong>Postman</strong>.
+                    Combino prevención de errores (Shift-Left) con validación de flujos críticos de negocio.
+                </p>
+                <p class="tech-stack">Stack: <span>Playwright</span> <span>TypeScript</span> <span>Cypress</span>
+                    <span>Selenium</span> <span>Postman</span> <span>Pytest</span>
+                </p>
+            </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="projects">
+            <div class="container">
+                <h2>Proyectos de Automatización de QA</h2>
 
-    <section class="projects">
-        <div class="container">
-            <h2>Proyectos de Automatización de QA</h2>
+                <div class="projects-grid">
+                    <div class="card">
+                        <h3>ContractLens – Suite E2E + API con Playwright y TypeScript</h3>
+                        <ul class="card-tags">
+                            <li>Playwright</li>
+                            <li>TypeScript</li>
+                            <li>Page Object Model</li>
+                            <li>Network Mocking</li>
+                            <li>Cross-Browser</li>
+                            <li>GitHub Actions</li>
+                        </ul>
+                        <p>Automatización completa de <strong>ContractLens</strong>, una aplicación real de análisis de
+                            contratos con IA. La suite separa la capa <strong>UI</strong> (interceptando la API para
+                            obtener pruebas rápidas y deterministas, aislando la latencia del modelo de IA) de la capa
+                            <strong>API</strong>, que valida contra el backend real <strong>códigos HTTP, esquemas de
+                                respuesta y cabeceras</strong> (200, 400, 404, 415). Incluye escenarios negativos,
+                            ejecución <strong>cross-browser (Chromium, Firefox y WebKit)</strong>, trazas y vídeos de
+                            fallos, y un pipeline de <strong>CI en GitHub Actions</strong>. Cobertura actual: 30/30
+                            pruebas (21 frontend + 9 backend).
+                        </p>
+                        <a href="https://github.com/marwix127/contractlens-playwright" class="repo-link" target="_blank"
+                            rel="noopener">Ver Repositorio</a>
+                    </div>
 
-            <div class="projects-grid">
-                <div class="card">
-                    <h3>Proyecto 1: ContractLens - Suite E2E + API con Playwright y TypeScript</h3>
-                    <h4>Habilidades Clave: Playwright, TypeScript, Page Object Model, Network Mocking, Cross-Browser,
-                        GitHub Actions</h4>
-                    <p>Automatización completa de <strong>ContractLens</strong>, una aplicación real de análisis de
-                        contratos con IA. La suite separa la capa <strong>UI</strong> (interceptando la API para
-                        obtener pruebas rápidas y deterministas, aislando la latencia del modelo de IA) de la capa
-                        <strong>API</strong>, que valida contra el backend real <strong>códigos HTTP, esquemas de
-                            respuesta y cabeceras</strong> (200, 400, 404, 415). Incluye escenarios negativos,
-                        ejecución <strong>cross-browser (Chromium, Firefox y WebKit)</strong>, trazas y vídeos de
-                        fallos, y un pipeline de <strong>CI en GitHub Actions</strong>. Cobertura actual: 30/30 pruebas
-                        (21 frontend + 9 backend).
-                    </p>
-                    <a href="https://github.com/marwix127/contractlens-playwright" class="repo-link">Ver Repositorio</a>
-                </div>
+                    <div class="card">
+                        <h3>Automatización E2E del Ciclo de Compra con Cypress (React Front-end)</h3>
+                        <ul class="card-tags">
+                            <li>Cypress</li>
+                            <li>JavaScript</li>
+                            <li>Flujos E2E</li>
+                            <li>Fixtures</li>
+                        </ul>
+                        <p>Implementación de un <strong>Framework de Testing de Regresión</strong> con Cypress para una
+                            aplicación React. El flujo se centra en el <strong>ciclo crítico de compra (Login, Adición
+                                al Carrito, Checkout)</strong>, asegurando la consistencia de datos y la experiencia de
+                            usuario.</p>
+                        <a href="https://github.com/marwix127/e-shop-qa-automation" class="repo-link" target="_blank"
+                            rel="noopener">Ver Repositorio</a>
+                    </div>
 
-                <div class="card">
-                    <h3>Proyecto 2: Automatización E2E del Ciclo de Compra con Cypress (React Front-end)</h3>
-                    <h4>Habilidades Clave: Cypress, JavaScript, Flujos E2E, Fixtures</h4>
-                    <p>Implementación de un <strong>Framework de Testing de Regresión</strong> con Cypress para una
-                        aplicación
-                        React. El flujo se centra en el <strong>ciclo crítico de compra (Login, Adición al Carrito,
-                            Checkout)</strong>, asegurando la consistencia de datos y la experiencia de usuario.</p>
-                    <a href="https://github.com/marwix127/e-shop-qa-automation" class="repo-link">Ver Repositorio</a>
-                </div>
+                    <div class="card">
+                        <h3>Automatización de API RESTful – Pruebas de Contrato y Flujos Críticos</h3>
+                        <ul class="card-tags">
+                            <li>Postman Runner</li>
+                            <li>Testing de Contrato</li>
+                            <li>Token Management</li>
+                            <li>Flujos Encadenados</li>
+                        </ul>
+                        <p>Diseño de una suite de pruebas para una API (simulando Spotify). El proyecto demuestra el
+                            <strong>encadenamiento de peticiones (CRUD)</strong>, la <strong>validación de tokens de
+                                autorización (Bearer)</strong> y el <strong>testing negativo</strong> para asegurar el
+                            manejo de errores (400, 404, 409).
+                        </p>
+                        <a href="https://github.com/marwix127/Spotify-API-QA-Collection" class="repo-link"
+                            target="_blank" rel="noopener">Ver Repositorio</a>
+                    </div>
 
-                <div class="card">
-                    <h3>Proyecto 3: Automatización de API RESTful - Pruebas de Contrato y Flujos Críticos</h3>
-                    <h4>Habilidades Clave: Postman Runner, Testing de Contrato, Token Management, Flujos Encadenados
-                    </h4>
-                    <p>Diseño de una suite de pruebas para una API (simulando Spotify). El proyecto demuestra el
-                        <strong>encadenamiento de peticiones (CRUD)</strong>, la <strong>validación de tokens de
-                            autorización
-                            (Bearer)</strong> y el <strong>testing negativo</strong> para asegurar el manejo de errores
-                        (400, 404, 409).
-                    </p>
-                    <a href="https://github.com/marwix127/Spotify-API-QA-Collection" class="repo-link">Ver
-                        Repositorio</a>
-                </div>
-
-                <div class="card">
-                    <h3>Proyecto 4: Framework E2E con Page Object Model (POM) - Selenium & Python/Pytest</h3>
-                    <h4>Habilidades Clave: Selenium WebDriver, Python, Pytest, Page Object Model (POM)</h4>
-                    <p>Construcción de una arquitectura de pruebas basada en el patrón <strong>POM</strong> para simular
-                        la
-                        gestión de contenido en un panel de administración (Django/Vue). Se centra en la automatización
-                        del
-                        <strong>ciclo CRUD de inventario</strong> y la <strong>validación de flujos críticos</strong>
-                        para asegurar la calidad de los flujos de negocio. Así como tambien la validacion de la creación
-                        de
-                        usuarios y la autenticación.
-                    </p>
-                    <a href="https://github.com/marwix127/Selenium-QA-Marketplace" class="repo-link">Ver Repositorio</a>
+                    <div class="card">
+                        <h3>Framework E2E con Page Object Model (POM) – Selenium &amp; Python/Pytest</h3>
+                        <ul class="card-tags">
+                            <li>Selenium WebDriver</li>
+                            <li>Python</li>
+                            <li>Pytest</li>
+                            <li>Page Object Model</li>
+                        </ul>
+                        <p>Construcción de una arquitectura de pruebas basada en el patrón <strong>POM</strong> para
+                            simular la gestión de contenido en un panel de administración (Django/Vue). Se centra en la
+                            automatización del <strong>ciclo CRUD de inventario</strong> y la <strong>validación de
+                                flujos críticos</strong> para asegurar la calidad de los flujos de negocio. Así como
+                            también la validación de la creación de usuarios y la autenticación.
+                        </p>
+                        <a href="https://github.com/marwix127/Selenium-QA-Marketplace" class="repo-link" target="_blank"
+                            rel="noopener">Ver Repositorio</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="contact">
-        <div class="container">
-            <h2>Contacto</h2>
+        <section class="contact" id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
 
-            <p>Email: <a href="mailto:marwix12@gmail.com">marwix12@gmail.com</a></p>
-            <p>GitHub: <a href="https://github.com/marwix127" target="_blank">github.com/marwix127</a></p>
-        </div>
-    </footer>
+                <p>Email: <a href="mailto:marwix12@gmail.com">marwix12@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/marcelelmouhajirmoncunill/" target="_blank"
+                        rel="noopener">marcelelmouhajirmoncunill</a></p>
+                <p>GitHub: <a href="https://github.com/marwix127" target="_blank"
+                        rel="noopener">github.com/marwix127</a></p>
+                <p>Portfolio Developer: <a href="https://marwix127.github.io" target="_blank"
+                        rel="noopener">marwix127.github.io</a></p>
+                <p class="contact-cv">CV: <a href="assets/CV%20Marcel%20QA.pdf" target="_blank"
+                        rel="noopener">Español</a> · <a href="assets/CV%20Marcel%20QA%20ENG.pdf" target="_blank"
+                        rel="noopener">English</a></p>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <p>© 2025 Marcel - QA Portfolio</p>
